@@ -1,0 +1,29 @@
+---
+title: "CodeBook.md"
+author: "Rsankowski"
+date: "April 26, 2015"
+output: html_document
+---
+
+'''Variables:
+"fileUrl" - is the url used to download the dataset; it was unzipped before obtaining the data
+"data" - contains the unzipped raw data
+"train_subject" - data frame from the file 'subject_train.txt'
+"train_set" - data frame from the file 'X_train.txt'
+"train_label" - data frame from the file 'y_train.txt'
+"features" - data frame fro the file 'features.txt'
+"features2" - vector containing the column 2 from the features data frame
+"features3" - vector with readable variable names
+"train_columns" - dataframe containing the merged data frame from train_subject, train_label, train_set
+"test_subject" - data frame from the file 'subject_test.txt'
+"test_label" - data frame from the file 'y_test.txt'
+"test_set" - data frame from the file 'X_test.txt'
+"test_columns" - dataframe containing the merged data frame from test_subject, test_label, test_set
+"dataset" - data frame with the merged data from train_columns and test_columns
+"valid_column_names" - removed invalid names of 'dataset'
+"dataset2" - subset of columns containing 'Subject', 'Activity', and all variable columns with 'mean' and 'std'; also it is sorted according to the Subject IDs
+"activ" - vector with the activity names
+"act_labels" - factor vector containing the activity labels in the order 1-6
+"act" - vector containing the Activity column from the data frame 'dataset2'
+"Activity" - vector with the transformed activity labels
+"tidy_dat" - tidy data frame subset for subjects and activity with the mean of all numeric variables from dataset2
